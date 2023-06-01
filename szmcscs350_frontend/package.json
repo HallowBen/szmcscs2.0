@@ -1,0 +1,21 @@
+{
+  "name": "szmcscs350_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "jquery": "^3.7.0",
+    "next": "13.4.4",
+    "photoswipe": "^5.3.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.9.0",
+    "react-photoswipe-gallery": "^2.2.7"
+  }
+}

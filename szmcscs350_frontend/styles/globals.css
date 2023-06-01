@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.btn{
+    background-color: #609966;
+    color: #EDF1D6;
+    max-width: max-content;
+    margin: 10px auto !important;
+    padding: 0 10px !important;
+    border-radius: 30px;
+    border: black solid 1px;
+    box-shadow: gray 0 2px 4px,darkslategray 0 7px 13px -3px, #40513B 0 -3px 0 inset;
+    transition: box-shadow .15s,transform .15s;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: gray 0 4px 8px, darkslategray 0 7px 13px -3px, #9DC08B 0 -3px 0 inset;
+}
+.btn:active{
+    box-shadow: #40513B 0 -3px 7px inset;
+    transform: translateY(2px);
+}

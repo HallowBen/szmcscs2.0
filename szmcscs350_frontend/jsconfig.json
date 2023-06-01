@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@/images/*": ["./public/images/*"],
+      "@/csapatrol/*": ["./public/csapatrol/*"],
+      "@/config/*": ["./config/*"],
+    }
+  }
+}
