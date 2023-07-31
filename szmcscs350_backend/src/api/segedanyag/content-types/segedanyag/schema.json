@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "segedanyags",
+  "info": {
+    "singularName": "segedanyag",
+    "pluralName": "segedanyags",
+    "displayName": "Segedanyag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipus": {
+      "type": "string"
+    },
+    "temakor": {
+      "type": "string"
+    },
+    "vezetoknek": {
+      "type": "boolean",
+      "default": false
+    },
+    "segitseg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "nev": {
+      "type": "string"
+    }
+  }
+}

@@ -29,3 +29,10 @@ html{
     box-shadow: #40513B 0 -3px 7px inset;
     transform: translateY(2px);
 }
+.nonvisible{
+    display: none;
+}
+.frozen{
+    height: 100vh;
+    overflow-y: hidden;
+  }

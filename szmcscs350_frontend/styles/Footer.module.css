@@ -6,6 +6,7 @@
     background: #333;
     color: #aaa;
     font-weight: 600;
+    width: 100%;
 }
 .logocontainer{
     display: flex;

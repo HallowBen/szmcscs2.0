@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tabors",
+  "info": {
+    "singularName": "tabor",
+    "pluralName": "tabors",
+    "displayName": "tabor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hol": {
+      "type": "string"
+    },
+    "Mikor": {
+      "type": "string"
+    }
+  }
+}

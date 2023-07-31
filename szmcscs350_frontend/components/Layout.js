@@ -12,6 +12,9 @@ export default function Layout({title, keywords, description, children}) {
             <title>350. SzMcscs | {title}</title>
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords}/>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+            <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"/>
         </Head>
         <Header />
         <div className={styles.container}>

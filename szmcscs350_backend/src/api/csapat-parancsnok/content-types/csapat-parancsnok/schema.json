@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "csapat_parancsnoks",
+  "info": {
+    "singularName": "csapat-parancsnok",
+    "pluralName": "csapat-parancsnoks",
+    "displayName": "csapat parancsnok",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nev": {
+      "type": "string"
+    },
+    "mikortol": {
+      "type": "integer"
+    },
+    "meddig": {
+      "type": "integer"
+    },
+    "vezetoseg": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vezetoseg.vezetoseg",
+      "inversedBy": "csapat_parancsnoks"
+    }
+  }
+}

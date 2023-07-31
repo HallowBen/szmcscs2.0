@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orslistas",
+  "info": {
+    "singularName": "orslista",
+    "pluralName": "orslistas",
+    "displayName": "Őrslista",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orsneve": {
+      "type": "string"
+    },
+    "letszam": {
+      "type": "integer"
+    },
+    "vezetosegs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vezetoseg.vezetoseg",
+      "mappedBy": "orslista"
+    }
+  }
+}

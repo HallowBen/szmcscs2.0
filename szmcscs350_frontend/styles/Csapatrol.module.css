@@ -1,6 +1,167 @@
 .kep{
-    height: 10px;
+    border-radius: 5px;    
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
 }
-.zaszlo{height: 15px;}
-.cserkesz_csapat{height: 30px;}
-.a_mi_tiz_evunk{height: 20px;}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+.zaszlo{ 
+    height: 28rem;
+    width: 15%;
+    margin-left: 2rem;
+}
+.cserkesz_csapat{
+    height: 40%;
+    width: auto;
+    margin: 2rem 0;
+}
+
+.a_mi_tiz_evunk{
+    height: auto;
+    width: 15%;
+    margin: 4rem 0 0 2rem;
+}
+
+.oldalcim{
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0 5rem;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .4);
+}
+
+.hasab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem auto;
+}
+.elso{
+    flex-direction: row;
+}
+.elso .szoveg{
+    width: 80%;
+}
+.alcim{
+    letter-spacing: 1px;
+    font-weight: 550;
+    text-decoration: 2px underline;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.masodik{
+    flex-direction: row;
+}
+.masodik .szoveg{
+    width: 80%;
+}
+.harmadik{
+    margin-bottom: -9rem !important;
+}
+.harmadik .szoveg{
+    width: 80%;
+    text-align: center;
+}
+.orsok{
+    width: 95%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.ors{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    position: relative;
+    line-height: 40px;
+}
+.nonevisible{
+    display: none;
+}
+.osvezetok{
+    display: flex;
+    width: 33%;
+    justify-content: space-evenly;
+}
+.orsneve{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+}
+.orsletszama{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    padding-right: 10%;
+}
+.hr{
+    position: absolute;
+    width: 75%;
+    bottom: 0;
+    left: 12%;
+    color: black;
+}
+.vl {
+    border-left: 2px ridge gray;
+    height: 30px;
+  }
+.tablazatok{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.tablazat{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.tabor,.csp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    line-height: 35px;
+}
+.hely, .mikor, .cspnev, .cspmikor, .cspmeddig{
+    margin-left: 100px;
+    display: inline;
+    text-align: center;
+}
+.cspnev{
+    width: 40%;
+}
+.cspmikor, .cspmeddig{
+    width: 20%;
+}
+.hely, .mikor{width: 50%;}
+.tcim{
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.hr1{
+    position: absolute;
+    width: 75%;
+    bottom: -2px;
+    left: 14%;
+    color: black;
+}
+.hr2{
+    position: absolute;
+    width: 85%;
+    bottom: -2px;
+    left: 15%;
+    color: black;
+}

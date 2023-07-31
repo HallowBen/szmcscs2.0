@@ -16,13 +16,11 @@ const Menu__List=[
         title: "Kezdőlap",
         mhref: "/",
         subnav: null,
-        subnavhref: null
     },
     {
         title: "Hírek",
         mhref: "/hirek",
         subnav: null,
-        subnavhref: null
     },
     {
         title: "Rólunk",
@@ -40,23 +38,13 @@ const Menu__List=[
     },
     {
         title: "Segédanyagok",
-        mhref: null,
-        subnav: [
-            {
-                title: "Vezetőknek",
-                href: "/segedlet/vezetoknek",
-            },
-            {
-                title: "Cserkészeknek",
-                href: "/segedlet/cserkeszeknek",
-            },
-        ]
+        mhref: "/segedlet",
+        subnav: null,
     },
     {
         title: "Galéria",
         mhref: "/galeria",
         subnav: null,
-        subnavhref: null
     },
 
 ]
@@ -102,21 +90,21 @@ export default function Header() {
                 <LuLogIn className={styles.navicon} />
                 <VscChromeClose onClick={mobileclose} id="MobileClose" className={[styles.nonvisible, styles.closebtn].join(" ")}/>
             </div>
-            <script src={mobile(search)}/>
+            <script src={mobile({search})}/>
         </div>
        
     );
 }
 
-async function mobile(search){
-    window.onload = mobile;
-    window.onresize = mobile;
-
+async function mobile({search}){
     const navwrapper=document.getElementById("NavWrapper")
     const mobilebtn= document.getElementById("MobileBtn")
     const icons = document.getElementById("Icons")
     const MobileClose= document.getElementById("MobileClose")
-    if(screen.width<=1100 & MobileClose.classList.contains(styles.nonvisible)){
+    window.onload = mobile;
+    window.onresize = mobile;
+    if(navwrapper !== null && mobilebtn !== null && icons !== null && MobileClose !== null){
+        if(screen.width<=1100 & MobileClose.classList.contains(styles.nonvisible)){
         navwrapper.classList.add(styles.nonvisible)
         mobilebtn.classList.remove(styles.nonvisible)
         icons.classList.remove(styles.navicons)
@@ -134,6 +122,8 @@ async function mobile(search){
             icons.classList.remove(styles.navicons)
         }
     }
+    }
+    
 }
 
 async function mobileopen(){

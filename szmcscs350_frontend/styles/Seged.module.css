@@ -1,0 +1,84 @@
+.sav{
+    width: 100%;
+    transform: translateY(-9px);
+    line-height: 50px;
+    background-color: #777;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.szerkeszto{
+    display: flex;
+    width: 25%;
+    justify-content: space-around;
+}
+.menupont{
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.menupont:hover{
+    background-color: #444;
+}
+.menupont:active{
+    color: #0af;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-evenly;
+}
+.mezo{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+.mezo input{
+    width: 200px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #aaa7;
+}
+.btn{
+    background-color: #609966;
+    color: #EDF1D6;
+    max-width: max-content;
+    font-size: 2rem;
+    line-height: 33px;
+    min-width: 165px;
+    vertical-align: middle;
+    border-radius: 30px;
+    border: black solid 1px;
+    box-shadow: gray 0 2px 4px,darkslategray 0 7px 13px -3px, #40513B 0 -3px 0 inset;
+    transition: box-shadow .15s,transform .15s;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: gray 0 4px 8px, darkslategray 0 7px 13px -3px, #9DC08B 0 -3px 0 inset;
+}
+.btn:active{
+    box-shadow: #40513B 0 -3px 7px inset;
+    transform: translateY(2px);
+}
+.toast{
+    font-size: 15px;
+}

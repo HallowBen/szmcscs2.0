@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vezetosegs",
+  "info": {
+    "singularName": "vezetoseg",
+    "pluralName": "vezetosegs",
+    "displayName": "vezetoseg",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nev": {
+      "type": "string"
+    },
+    "kepesites": {
+      "type": "enumeration",
+      "enum": [
+        "Őrsvezető",
+        "Segédtiszt",
+        "Tiszt"
+      ]
+    },
+    "Beosztas": {
+      "type": "enumeration",
+      "enum": [
+        "Őrsvezető",
+        "Rajparancsnok",
+        "Csapatparancsnok helyettes",
+        "Csapatparancsnok",
+        "Egyéb"
+      ]
+    },
+    "Profilkep": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "vezetoseg"
+    },
+    "orslista": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::orslista.orslista",
+      "inversedBy": "vezetosegs"
+    },
+    "csapat_parancsnoks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::csapat-parancsnok.csapat-parancsnok",
+      "mappedBy": "vezetoseg"
+    }
+  }
+}
